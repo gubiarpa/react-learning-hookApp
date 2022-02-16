@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './counter.css';
+import '../../styles/effects.css';
 
 export const CounterApp = () => {
 
