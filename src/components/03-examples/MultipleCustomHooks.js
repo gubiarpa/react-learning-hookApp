@@ -36,7 +36,7 @@ export const MultipleCustomHooks = () => {
             }
 
             <div className='text-center'>
-                <button className='btn btn-primary' onClick={increment}>
+                <button className='btn btn-primary' onClick={increment} disabled={loading}>
                     Next quote
                 </button>
             </div>
