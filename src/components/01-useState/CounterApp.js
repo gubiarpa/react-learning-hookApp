@@ -10,12 +10,13 @@ export const CounterApp = () => {
         counter4: 40,
     });
 
-    const { counter1, counter2 } = state;
+    const { counter1, counter2, counter3 } = state;
 
     return (
     <>
         <h2>Counter 1: { counter1 }</h2>
         <h2>Counter 2: { counter2 }</h2>
+        <h2>Counter 3: { counter3 }</h2>
         <hr />
 
         <button
@@ -25,6 +26,7 @@ export const CounterApp = () => {
                     ...state,
                     counter1: counter1 + 1,
                     counter2: counter2 - 1,
+                    counter3: counter3 * 2,
                 });
             }}
             >

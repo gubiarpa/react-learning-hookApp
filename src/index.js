@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { FocusScreen } from './components/04-useRef/FocusScreen';
+import { CounterWithCustomHook } from './components/01-useState/CounterWithCustomHook';
 
 ReactDOM.render(
-  <FocusScreen />,
+  <CounterWithCustomHook />,
   document.getElementById('root')
 );

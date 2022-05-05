@@ -4,16 +4,17 @@ import '../../styles/effects.css';
 
 export const CounterWithCustomHook = () => {
     
-    const { state, increment, decrement, reset } =  useCounter(100);
+    const { counter: counter1, increment: increment1, decrement: decrement1, reset: reset1 } =  useCounter(50);
+    const { counter: counter2, increment: increment2, decrement: decrement2, reset: reset2 } =  useCounter(50);
 
     return (
         <>
-            <h1>Counter with Hook: { state }</h1>
+            <h1>Counter with Hook: { counter1 } + { counter2 } = { counter1 + counter2 }</h1>
             <hr />
 
-            <button onClick={ () => { increment(); } } className='btn'>+1</button>
-            <button onClick={ () => { reset() } } className='btn'>Reset</button>
-            <button onClick={ () => { decrement(); } } className='btn'>-1</button>
+            <button onClick={ () => { decrement1(); increment2(); } } className='btn btn-primary mx-1'>-</button>
+            <button onClick={ () => { reset1(); reset2(); } } className='btn btn-primary mx-1'>Reset</button>
+            <button onClick={ () => { increment1(); decrement2(); } } className='btn btn-primary mx-1'>+</button>
         </>
     );
 }
