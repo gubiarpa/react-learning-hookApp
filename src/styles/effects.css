@@ -1,3 +1,12 @@
 body {
     padding: 70px;
 }
+
+blockquote {
+    display: flex;
+    background-color: #7DD;
+}
+
+pre {
+    background-color: #AAA;
+}
